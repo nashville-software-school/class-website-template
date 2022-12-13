@@ -11,4 +11,6 @@ jobs:
     - name: Install modules
       run: npm install
     - name: Build Code
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
       run: npm run deploy
