@@ -12,5 +12,5 @@ jobs:
       uses: actions/setup-node@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-      run: npm install
-      run: npm run deploy
+    - run: npm install
+    - run: npm run deploy
