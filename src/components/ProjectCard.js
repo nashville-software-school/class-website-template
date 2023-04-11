@@ -16,9 +16,13 @@ function ProjectCard({ project }) {
             <a className="level-item" href={project.github_url}>
               <span className="icon is-medium"><i className="fab fa-md fa-github" /></span>
             </a>
-            <a className="level-item" href={project.deployed_url}>
-              <span className="icon is-medium"><i className="fas fa-md fa-link" /></span>
-            </a>
+            {
+              project.deployed_url ?
+                <a className="level-item" href={project.deployed_url}>
+                  <span className="icon is-medium"><i className="fas fa-md fa-link" /></span>
+                </a>
+                : <></>
+            }
           </div>
         </nav>
       </div>
