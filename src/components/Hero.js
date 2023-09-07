@@ -20,7 +20,7 @@ function Hero({ cohortName, programName, demoDayLink, demoDate, heroRef, navBarR
                     <span className="icon">
                       <i className="fa-regular fa-calendar-plus"></i>
                     </span>
-                    <span>RSVP on Eventbrite</span>
+                    <span>RSVP Here</span>
                   </a>
                 </span>
               </div>
